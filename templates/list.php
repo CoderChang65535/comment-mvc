@@ -10,15 +10,13 @@
         <th>title</th>
         <th>content</th>
     </tr>
-    <tr>
-        <?php
-        if ($article) {
-            foreach ($article as $item) {
-                print $item;
-            }
+    <?php
+    if ($article) {
+        foreach ($article as $item) {
+            print $item;
         }
-        ?>
-    </tr>
+    }
+    ?>
 </table>
 <a href="index.php">Back</a>
 </body>

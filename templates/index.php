@@ -5,5 +5,15 @@
     <title><?php print $title; ?></title>
 </head>
 <body>
+<form action='' method='post'>
+    标题：
+    <input type='text' name='title'>
+    </br>
+    内容：
+    <input type='text' name='content'>
+    </br>
+    <input type='submit' value='提交' ,name='sub'/>
+</form>
+<input type="button" onclick="location.href='index.php?action=list'" value="查看记录" />
 
 </body>

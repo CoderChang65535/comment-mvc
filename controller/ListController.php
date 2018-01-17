@@ -26,8 +26,8 @@ class ListController extends ControllerInterface
     public function formatArticleInfo($list){
         if ($list) {
             foreach ($list as $item) {
-                $result[]="<td>".$item->getTitle()."</td>"
-                    ."<td>".$item->getContent()."</td>";
+                $result[]="<tr><td>".$item->getTitle()."</td>"
+                    ."<td>".$item->getContent()."</td></tr>";
             }
         }
         return $result;
