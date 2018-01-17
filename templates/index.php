@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title><?php print $title; ?></title>
 </head>
+<?php //print $site_default['name']; ?>
 <body>
 <form action='' method='post'>
     标题：

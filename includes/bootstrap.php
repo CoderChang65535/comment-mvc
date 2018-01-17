@@ -32,7 +32,7 @@ class Config
         if (isset(self::$config[$key])) {
             return self::$config[$key];
         }
-        return FALSE;
+        return array();
     }
 
 }
@@ -60,6 +60,8 @@ abstract class ControllerInterface
 
     public function setTemplate($template, $args = array())
     {
+        $args['site_default']=Config::get('site_default');
+        //dump($args);
         $this->setArgs($args);
         $this->template = ROOT . '/templates/' . $template . '.php';
     }
